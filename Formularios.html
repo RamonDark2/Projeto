@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Ramon"content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+
+
+    <div>
+        <h1 id="titulo">Cadastro De Devs</h1>
+        <h2 id="subtitulo">Complete as suas informações</h2><br>
+    </div>
+
+    <form>
+
+    <fieldset class="grupo">
+
+    <div class="campo">
+        <label for="Nome" id="Nome1"><strong>Nome</strong></label><br>
+        <input type="text" required name="Nome" id="Nome2" size="23">
+    </div>
+    
+    <div class="campo">
+        <br><label for="Sobrenome" id="Sobrenome1"><strong>Sobrenome</strong></label><br>
+        <input type="text" required name="Sobrenome" id="Sobrenome2" size="23">
+    </div>
+    
+    </fieldset>
+
+    <div class="campo">
+        <br><br>
+        <label for="Email" id="Email1"><strong>Email</strong></label><br>
+        <input type="email" size="23" aria-required="true" name="Email" id="Email2" required><br>
+    </div>
+
+    <div class="campo">
+        <label for="DevApp"><strong>de qual lado da aplicação você desenvolve?</strong></label>
+        
+        <input type="radio" name="Frontend" id="Frontinput">
+        <label for="DevApp" value="Front-End" id="Front">Front-End</label>
+        
+        <input type="radio" name="Backend" id="Backinput">
+        <label for="DevApp" value="Back-End" id="Back">Back-End</label>
+
+        <input type="radio" name="Fullstack" id="Fullinput">
+        <label for="DevApp" value="Fullstack" id="Full">Fullstack</label>
+    </div>
+
+    <div class="campo">
+       <br><label for="Senioridade" id="Senioridade1">Senioridade</label>
+        <select name="Senioridade" id="Senioridade2">
+            <option selected disabled value="">Selecione</option>
+            <option value="Senior">Senior</option>
+            <option value="Pleno">Pleno</option>
+            <option value="Junior">Junior</option>
+        </select>
+    </div>
+
+    <fieldset class="grupo">    
+        
+    <div class="check">
+        <label for=""><strong>Selecione as Tecnologias que utiliza:</strong></label>
+        <br><br>
+        <input type="checkbox" name="HTML" id="">
+        <label for="">HTML</label>
+        <input type="checkbox" name="CSS" id="">
+        <label for="">CSS</label>        
+        <input type="checkbox" name="PHP" id="">
+        <label for="">PHP</label>
+        <input type="checkbox" name="C#" id="">
+        <label for="">C#</label>
+        <input type="checkbox" name="Python" id="">
+        <label for="">Python</label>
+        <input type="checkbox" name="Java" id="">
+        <label for="">JavaScript</label>
+    </div>
+
+    </fieldset>
+
+    <div class="campo">
+        <br><label for="Descrição"><strong>Conte um pouco mais da sua experiência:</strong></label><br><br>
+        <textarea name="Descrição" id="Descrição" cols="60" rows="10"></textarea>
+    </div>
+
+    <div class="campo">
+       <br><br><button class="botao" type="submit" name="Enviar" autofocus>Enviar</button>
+    </div>
+
+
+    </form>
+
+
+</body>
+
+</html>
