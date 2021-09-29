@@ -83,6 +83,8 @@ background: #E0E0F8;
     left: 48%;
     margin-right: 30%;
     transform: translate(-50% , -50%);
+    
+
 }
 
 .botao:hover {
@@ -113,6 +115,7 @@ background: #E0E0F8;
 } 
 #Nome2 {
     margin-bottom: 20px;
+    size: 20px;
 }
 
 #Email1 {
