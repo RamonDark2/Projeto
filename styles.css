@@ -6,20 +6,22 @@
 
 #titulo {
  font-family: sans-serif;
- color: #380861;
- margin-left: 2%;
+ color: #6A5ACD;
+ margin-left: 6%;
  font-size: 40px;
+ text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
 }
 
 #subtitulo {
     font-family: sans-serif;
-    color: #380861;
-    margin-left: 4%;
+    color: #836FFF;
+    margin-left: 12%;
     font-size: 20px;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
 }
 
 fieldset {
-    border: 0;
+    border: 0px;
 }
 
 body {
@@ -71,25 +73,22 @@ background: #E0E0F8;
 
 .botao{
     font-size: 20px;
-    background: #59429d;
+    background: linear-gradient(to left,#59429d , #836FFF);
     border: 0;
-    margin-top: -150px;
+    margin-top: -10px;
     color: #ffffff;
     padding: 8px;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-    position: absolute;
-    top: 100%;
-    left: 48%;
-    margin-right: 30%;
-    transform: translate(-50% , -50%);
-    
-
+    position: static;
+    transform: translate(180px , -20%);
+    display: block;
+    transition: all 0.3s ease;
 }
 
 .botao:hover {
 
-    background: #ccbbff;
+    background: linear-gradient(to right,#59429d , #836FFF);
     box-shadow: inset 2px 2px 2px rgb(0,0,0,0.2);
     text-shadow: none;
 }
@@ -101,6 +100,7 @@ background: #E0E0F8;
 .campo textarea {
     margin-top: -40px;
     font-size: 13px;
+
 }
 
 .campo input[type="text"]{
@@ -113,9 +113,10 @@ background: #E0E0F8;
 
     margin-top: 20px;
 } 
-#Nome2 {
+#inputnome {
     margin-bottom: 20px;
     size: 20px;
+    padding: 2.32%;
 }
 
 #Email1 {
@@ -129,7 +130,6 @@ background: #E0E0F8;
     margin-left: 20px;
 
 }
-
 #Front, #Back, #Full{
     margin-top: -20px;
     margin-left: 20px;
@@ -142,4 +142,17 @@ background: #E0E0F8;
 #Senioridade1{
     margin-top: -15px;
     color: #59429d;
+}
+
+form {
+    background: white;
+    width: 42%;
+    height: 30%;
+    padding-left: 50px;
+    padding-right: -2px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    justify-content: center;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+    border-radius: 8px;
 }
