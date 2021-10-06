@@ -17,6 +17,7 @@ body{
 }
 
 
+
 main{
     margin-top: -20px;
     border: solid white;
@@ -49,11 +50,16 @@ flex-direction: column;
     height: 30px;
     width: 100%;
     border-bottom: 1px solid rgba(0,0,0,0.3);
-    bottom: -5px;
+    bottom: 0px;
     left: 0px;
     display: block;
-    margin-top: 0px;  
     outline: none;
+    background: none;
+}
+
+#input1:focus{
+    border-bottom: 1px solid #00FF7F;
+    transition: All 0.4s ease-in-out;
 }
 
 #input2{
@@ -65,7 +71,12 @@ flex-direction: column;
     outline: none;
 }
 
-.container button{
+#input2:focus{
+    border-bottom: 1px solid #00FF7F;
+    transition: All 0.4s ease-in-out;
+}
+
+#button{
     margin-bottom: 10px;
     padding: 4px;
     background: linear-gradient(to left,#4776E6, #8e54e9);
@@ -81,13 +92,13 @@ flex-direction: column;
     padding-left: 90px;
 }
 
-button:hover{
+#button:hover{
     letter-spacing: 0.2px 0px 0px 0.2px ;
     background: linear-gradient(to right,#4776E6, #8e54e9);
 }
 
 span {
-    padding-left: 13px;
+    padding-left: 9px;
 }
 
 .footer {
@@ -98,32 +109,43 @@ span {
     color: #4169E1;
     display: block;
     border-radius: 4px;
-    background:linear-gradient(to right,#00008B,#7B68EE);
+    background:linear-gradient(to right,#0000FF,#1E90FF);
     padding-left: 30px;
-    margin-left: 20px;
+    margin-left: 15px;
     margin-right: 15px;
-    padding-top: 2px;
+    padding-top: -2px;
     padding-bottom: 3px;
     padding-right: 20px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+    text-decoration: none;
+    color: white;
 }
 
 #F:hover{
-    background:linear-gradient(to left,#00008B,#7B68EE);
+    background:linear-gradient(to left,#0000FF,#1E90FF);
 }
+
 
 #I {
     background:linear-gradient(to right,#FF1493,    #FFA500);
     display: block;
     margin: 15px;
-    margin-left: 20px;
+    margin-left: 15px;
     padding-left: 30px;
     padding-top: 2px;
     padding-bottom: 2px;
     padding-right: 0px;
     border-radius: 4px;
     align-items: center;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+    color: white;
+    text-decoration: none;
 }
 
 #I:hover{
     background:linear-gradient(to left,#FF1493,    #FFA500);
+}
+
+#facebook {
+    margin-top: 3px;
 }

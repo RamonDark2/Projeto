@@ -1,4 +1,4 @@
-*{
+    *{
     margin: 0;
     padding: 0;
 
@@ -154,6 +154,6 @@ form {
     padding-bottom: 10px;
     padding-top: 20px;
     justify-content: center;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
     border-radius: 8px;
 }
